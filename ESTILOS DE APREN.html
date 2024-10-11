@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Estilos de Aprendizaje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4682b4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: #4682b4;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        label {
+            font-size: 1.1em;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #4682b4;
+            color: white;
+            font-size: 1.2em;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .result {
+            font-size: 1.5em;
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #d3f8d3;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Test de Estilos de Aprendizaje</h1>
+    </header>
+    <div class="container">
+        <h2>Descubre tu estilo de aprendizaje</h2>
+        <form id="learningStyleForm">
+            <div class="question">
+                <label>1. Prefiero aprender con:</label><br>
+                <input type="radio" name="q1" value="visual"> Imágenes y gráficos<br>
+                <input type="radio" name="q1" value="auditivo"> Escuchar explicaciones<br>
+                <input type="radio" name="q1" value="lectura"> Leer libros o textos<br>
+                <input type="radio" name="q1" value="kinestesico"> Hacer cosas prácticas<br>
+            </div>
+
+            <div class="question">
+                <label>2. Me resulta más fácil recordar:</label><br>
+                <input type="radio" name="q2" value="visual"> Lo que veo<br>
+                <input type="radio" name="q2" value="auditivo"> Lo que escucho<br>
+                <input type="radio" name="q2" value="lectura"> Lo que leo<br>
+                <input type="radio" name="q2" value="kinestesico"> Lo que hago<br>
+            </div>
+
+            <div class="question">
+                <label>3. Para entender mejor algo, prefiero:</label><br>
+                <input type="radio" name="q3" value="visual"> Ver diagramas o esquemas<br>
+                <input type="radio" name="q3" value="auditivo"> Escuchar una explicación<br>
+                <input type="radio" name="q3" value="lectura"> Leer las instrucciones<br>
+                <input type="radio" name="q3" value="kinestesico"> Experimentar o manipular<br>
+            </div>
+
+            <div class="question">
+                <label>4. En una conferencia, prefiero:</label><br>
+                <input type="radio" name="q4" value="visual"> Ver imágenes o diapositivas<br>
+                <input type="radio" name="q4" value="auditivo"> Escuchar al orador<br>
+                <input type="radio" name="q4" value="lectura"> Leer materiales de apoyo<br>
+                <input type="radio" name="q4" value="kinestesico"> Hacer anotaciones prácticas<br>
+            </div>
+
+            <div class="question">
+                <label>5. Prefiero estudiar:</label><br>
+                <input type="radio" name="q5" value="visual"> Viendo mapas conceptuales<br>
+                <input type="radio" name="q5" value="auditivo"> Escuchando grabaciones<br>
+                <input type="radio" name="q5" value="lectura"> Leyendo textos<br>
+                <input type="radio" name="q5" value="kinestesico"> Haciendo ejercicios prácticos<br>
+            </div>
+
+            <div class="question">
+                <label>6. Cuando aprendo algo nuevo:</label><br>
+                <input type="radio" name="q6" value="visual"> Prefiero ver demostraciones<br>
+                <input type="radio" name="q6" value="auditivo"> Prefiero escuchar explicaciones<br>
+                <input type="radio" name="q6" value="lectura"> Prefiero leer acerca del tema<br>
+                <input type="radio" name="q6" value="kinestesico"> Prefiero experimentar con el tema<br>
+            </div>
+
+            <div class="question">
+                <label>7. Durante una discusión, prefiero:</label><br>
+                <input type="radio" name="q7" value="visual"> Ver presentaciones<br>
+                <input type="radio" name="q7" value="auditivo"> Escuchar los puntos clave<br>
+                <input type="radio" name="q7" value="lectura"> Leer las notas<br>
+                <input type="radio" name="q7" value="kinestesico"> Participar activamente<br>
+            </div>
+
+            <div class="question">
+                <label>8. Cuando trabajo en equipo, me gusta:</label><br>
+                <input type="radio" name="q8" value="visual"> Usar pizarras o gráficos<br>
+                <input type="radio" name="q8" value="auditivo"> Hablar y escuchar ideas<br>
+                <input type="radio" name="q8" value="lectura"> Tomar apuntes<br>
+                <input type="radio" name="q8" value="kinestesico"> Participar en actividades prácticas<br>
+            </div>
+
+            <div class="question">
+                <label>9. En mi tiempo libre, prefiero:</label><br>
+                <input type="radio" name="q9" value="visual"> Ver películas o imágenes<br>
+                <input type="radio" name="q9" value="auditivo"> Escuchar música o podcasts<br>
+                <input type="radio" name="q9" value="lectura"> Leer libros o revistas<br>
+                <input type="radio" name="q9" value="kinestesico"> Realizar actividades físicas<br>
+            </div>
+
+            <div class="question">
+                <label>10. Aprendo mejor cuando:</label><br>
+                <input type="radio" name="q10" value="visual"> Veo videos o imágenes<br>
+                <input type="radio" name="q10" value="auditivo"> Escucho una lección<br>
+                <input type="radio" name="q10" value="lectura"> Leo artículos<br>
+                <input type="radio" name="q10" value="kinestesico"> Realizo experimentos<br>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="calculateResult()">Ver Resultados</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        function calculateResult() {
+            const form = document.getElementById('learningStyleForm');
+            const formData = new FormData(form);
+
+            let counts = {
+                visual: 0,
+                auditivo: 0,
+                lectura: 0,
+                kinestesico: 0
+            };
+
+            for (let entry of formData.entries()) {
+                counts[entry[1]]++;
+            }
+
+            let maxStyle = Object.keys(counts).reduce((a, b) => counts[a] > counts[b] ? a : b);
+            let resultText = '';
+
+            switch (maxStyle) {
+                case 'visual':
+                    resultText = 'Tu estilo de aprendizaje es Visual. Prefieres aprender a través de imágenes y gráficos.';
+                    break;
+                case 'auditivo':
+                    resultText = 'Tu estilo de aprendizaje es Auditivo. Prefieres escuchar para aprender mejor.';
+                    break;
+                case 'lectura':
+                    resultText = 'Tu estilo de aprendizaje es Lectura y Escritura. Prefieres leer textos y escribir notas.';
+                    break;
+                case 'kinestesico':
+                    resultText = 'Tu estilo de aprendizaje es Kinestésico. Aprendes mejor haciendo cosas prácticas.';
+                    break;
+            }
+
+            document.getElementById('result').textContent = resultText;
+            document.getElementById('result').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
